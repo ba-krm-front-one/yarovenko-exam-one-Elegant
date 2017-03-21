@@ -1,0 +1,46 @@
+/*---------- some modification for little width screen -------------*/
+@media screen and (max-width: 800px) {
+
+  .fa-iphone-content {
+    padding: 0;
+    &__image {
+      display: none;
+      transition-property: display;
+      transition-duration: 0.5s;
+    }
+  }
+  .fa-section-dolore-magna {
+    padding-top: 0px;
+    transition-property: padding-top;
+    transition-duration: 0.5s;
+  }
+
+  .ha-head-section {
+    flex-wrap: wrap;
+  }
+  .ha-menu {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+  }
+  .fa-section-work-preview {
+    &__item:nth-child(2) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+/*---------- end modification for little width screen -------------*/
+/**/
+@media screen and (max-width: 624px) {
+  .fo-inputs-dubl {
+    &__item:last-of-type {
+      border-left: 2px solid #afafaf;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "header.scss";
+@import "footer.scss";
+
+.ha-description-section {
+  margin: 252px auto 0;
+  min-height: 185px;
+  max-width: 598px;
+  @include flex-style (flex, column, flex-start, center, nowrap);
+  text-align: center;
+
+  &__title {
+    @include text-style(48px, 700, $font-family-Raleway, none, uppercase);
+    max-width: 598px;
+    color: $color-white-text;
+  }
+
+  &__underline {
+    width: 86px;
+    background-color: $color-white-text;
+    margin-top: 49px;
+    margin-bottom: 41px;
+  }
+
+  &__description {
+    max-width: 596px;
+    color: #fffefe;
+    @include text-style(22px, 400, $font-family-Loto, 30px, none);
+  }
+}

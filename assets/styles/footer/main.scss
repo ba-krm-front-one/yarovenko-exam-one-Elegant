@@ -1,0 +1,66 @@
+@import "header.scss";
+
+/*block footer*/
+.fo-footer {
+  margin: 0 auto;
+  background: url(../image/footer/footer-bg.png) center no-repeat;
+  background-size: cover;
+  height: 802px;
+  padding-top: 118px;
+  @include flex-style (flex, column, flex-start, center, nowrap);
+}
+.fo-form {
+  margin: 0 auto;
+  margin-top: 63px;
+  width: 100%;
+  max-width: 670px;
+  min-height: 301px;
+  @include flex-style (flex, column, flex-start, none, none);
+
+  &__button {
+    @include text-style(24px, 400, $font-family-Loto, 60px, uppercase);
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 183px;
+    height: 60px;
+    border: 3px solid $color-white-text;
+    color: $color-white-text;
+    background-color: transparent;
+
+    &:hover {
+      transform: translateY(4px);
+      transition: transform .3s ease-in, opacity .2s ease-in;
+      box-shadow: 2px 0px 15px $color-dark-text;
+      cursor: pointer;
+    }
+  }
+}
+
+.fo-inputs-dubl {
+  width: 100%;
+  height: 49px;
+  @include flex-style (flex, row, space-between, none, none);
+  margin-bottom: 95px;
+
+  &__item {
+    max-width: 302px;
+    flex-grow: 1;
+  }
+}
+
+.input-style {
+  height: 49px;
+  color: #676767;
+  @include text-style(18px, 400, $font-family-Loto, 40px, none);
+  font-style: italic;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  width: 100%;
+  padding-left: 28px;
+  background-color: transparent;
+  &:focus {
+    padding-left: 10px;
+    -webkit-transition: padding .25s;
+    transition: padding .25s;
+  }
+}

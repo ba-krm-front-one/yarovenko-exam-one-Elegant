@@ -1,0 +1,53 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "header/main.scss";
+@import "main/main.scss";
+@import "footer/main.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 3886px;
+  width: 100%;
+  min-width: 300px;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+}
+
+.underline-line {
+  align-self: center;
+  width: 86px;
+  height: 2px;
+  border: 0;
+}
+@import "media.scss";

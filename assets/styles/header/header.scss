@@ -1,0 +1,57 @@
+
+.ha-header {
+  margin-top: 0;
+  background: url(../image/header/hero-img.png) center no-repeat;
+  background-size: cover;
+  min-height: 900px;
+  padding-top: 50px;
+}
+
+.ha-head-section {
+  height: 18px;
+  width: calc(100% - 70px);
+  @include flex-style (flex, row, space-between, center, wrap);
+
+  .ha-img-logo {
+    width: 109px;
+    height: 18px;
+  }
+
+  .ha-menu {
+    width: 548px;
+    height: 11px;
+    @include flex-style (flex, row, space-between, center, wrap);
+
+    &__item {
+      list-style: none;
+      &:hover {
+        transform: translateY(4px);
+        transition: transform .3s ease-in, opacity .2s ease-in;
+      }
+    }
+    &__link {
+      @include text-style(14px, 500, $font-family-Loto, 24px, uppercase);
+      color: #fffefe;
+      padding-top: 10px;
+      position: relative;
+
+      &:before {
+        display: block;
+        background-color: #fffefe;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 7px;
+        height: 1px;
+        opacity: 0;
+        transform: translateY(-5px);
+        transition: transform .2s ease-in, opacity .2s ease-in;
+      }
+      &:hover:before {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
