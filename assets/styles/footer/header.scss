@@ -1,0 +1,29 @@
+.fo-header {
+  max-width: 249px;
+  height: 195px;
+  @include flex-style (flex, column, space-between, none, none);
+
+  &__underline {
+    background-color: $color-white-text;
+  }
+}
+
+.fa-header__title--white {
+  color: $color-white-text;
+}
+
+.fo-header-list {
+  @include flex-style (flex, row, space-between, none, none);
+  width: 239px;
+  align-self: center;
+  height: 24px;
+  align-items: baseline;
+  li {
+    display: inline-block;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+  }
+
+}

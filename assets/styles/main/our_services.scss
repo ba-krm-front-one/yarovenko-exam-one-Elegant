@@ -1,0 +1,72 @@
+
+.fa-section-our-services {
+  min-height: 735px;
+  padding-top: 116px;
+  padding-left: 17px;
+  padding-right: 27px;
+  @include flex-style (flex, column, none, none, none);
+
+  &__underline {
+    align-self: center;
+    background-color: $color-dark-text;
+    margin-top: 61px;
+    margin-bottom: 50px;
+  }
+}
+
+.fa-header {
+  margin: 0 auto;
+  width: 100%;
+  @include flex-style (flex, row, space-around, center, nowrap);
+  padding: 0;
+
+  &__title {
+    align-self: center;
+    text-align: center;
+    max-width: 250px;
+    @include text-style(35px, 700, $font-family-Raleway, 60px, uppercase);
+    color: $color-dark-text;
+  }
+}
+
+.fa-choose-our-services {
+  @include flex-style (flex, row, space-between, center, wrap);
+
+  &__item {
+    @include flex-style (flex, column, space-between, center, nowrap);
+    flex-grow: 1;
+    padding-top: 30px;
+
+    width: 316px;
+    height: 348px;
+    align-content: center;
+    text-align: center;
+
+    &:first-of-type {
+      width: 339px;
+    }
+
+    &:last-of-type > img {
+      padding-top: 21px;
+    }
+  }
+}
+
+.item-description {
+  @include flex-style (flex, column, space-between, none, none);
+  height: 133px;
+  width: 100%;
+  color: $color-dark-text;
+  font-family: $font-family-Loto;
+  font-weight: 400;
+
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+}

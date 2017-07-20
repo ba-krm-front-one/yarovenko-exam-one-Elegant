@@ -1,0 +1,49 @@
+
+/*----dolore magna -----*/
+.fa-section-dolore-magna {
+  margin-top: 0;
+  background: url(../image/main/ipad-bg.png) center no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding-top: 75px;
+}
+
+.fa-iphone-content {
+  padding-right: 98px;
+  @include flex-style (flex, row, space-between, none, none);
+
+  &__image {
+    width: 257px;
+    height: 425px;
+  }
+}
+
+.fa-content-description {
+  max-width: 560px;
+  height: 212px;
+  margin-top: 94px;
+  color: $color-white-text;
+  font-family: $font-family-Loto;
+  font-weight: 400;
+
+  &__title {
+    max-width: 560px;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 516px;
+    @include text-style(22px, 100, $font-family-Loto, 28px, none);
+    margin: 10px 0 0;
+  }
+  &__link {
+    font-size: 18px;
+    text-decoration: underline;
+    position: absolute;
+    margin-top: 58px;
+    color: $color-white-text;
+  }
+}
+
+/**/

@@ -1,0 +1,20 @@
+$color-white-text: #ffffff;
+$color-dark-text: #222222;
+$font-family-Loto: Lato, sans-serif;
+$font-family-Raleway: Raleway, sans-serif;
+
+@mixin flex-style($display, $flex-direction, $justify-content, $align-items,$flex-wrap) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin text-style($font-size,$font-weight,$font-family,$line-height,$text-transform) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-family: $font-family;
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
